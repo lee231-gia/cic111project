@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(#fff2d8,#f9f3e7, #fff2d8);
+}
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+.video-container {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    z-index: -1;
+    margin-top: 70px;
+    border: solid #000000 2px;
+    border-radius: 10px;
+}
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: solid #000000 2px;
+}
+/* MAIN HEADER */
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: linear-gradient(#fe8d8d,#FF6969, #fe8d8d);
+    padding: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;  
+}
+.header-left {
+    display: flex;
+    align-items: center;
+    font-size: 32px; 
+    padding-left: 0;
+    margin-left: 0;
+}
+.header-left .logo {
+    font-family: 'Teko', sans-serif;
+    font-weight: 300;
+    color: #f8ede4;
+    font-size: xx-large;
+    padding-left: 20px;
+}
+.main-header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+    margin: 0;
+    padding-right: 22%;
+}
+.main-header nav ul li {
+    display: inline;
+    white-space: nowrap;
+}
+.main-header nav ul li a {
+    color: #0C1844;
+    text-decoration: none;
+    font-size: 16px; 
+    padding: 5px 10px;
+    font-family: "DM Sans", sans-serif;
+}
+.main-header nav ul li a:hover {
+    text-decoration: underline;
+}
+.explore-link {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    text-align: center;
+}
+.explore-link a {
+    color: #f8ede4;
+    background: rgba(199, 0, 57, 0.5);
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: "BankGothic Md BT";
+    transition: 0.6s;
+    box-shadow: 0px 0px 60px #5b0313;
+    -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0,0,0,0.4));
+}
+.explore-link:active {
+    scale: 0.92;
+  }
+.explore-link a:hover {
+    background: #f8ede4;
+    color: rgba(199, 0, 57, 0.5);
+}

@@ -1,0 +1,124 @@
+/* Ensure the body and html cover the full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;  /* Enable flexbox to center the content */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    background-color: #333; /* Optional: Change the background color for contrast */
+}
+
+/* Center the text box */
+.text-box {
+    width: 90%;
+    color: #fff;
+    text-align: center;
+}
+
+/* Correct font-size for h1 */
+.text-box h1 {
+    font-size: 62px; /* Add px unit */
+}
+
+/* Styling for p */
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+
+
+
+/* Services Section */
+.services-area {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services-area h3 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.services-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.services-content li {
+    flex: 1;
+    max-width: 200px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.services-content li:hover {
+    transform: scale(1.05);
+}
+
+.services-content img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.services-content li h4 {
+    font-size: 18px;
+    color: #bf0a30;
+    margin-bottom: 15px;
+}
+
+.services-content li p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Contact Section */
+.contact-area {
+    padding: 50px 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.contact-content li {
+    flex: 1;
+    max-width: 250px;
+}
+
+.contact-content li i {
+    font-size: 40px;
+    color: #bf0a30;
+    margin-bottom: 15px;
+}
+
+.contact-content li p {
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
